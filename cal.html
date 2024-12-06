@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./cal.css">
+</head>
+<body>
+    
+  <div class="container">
+      <div class="calculator">
+        <form action="" id="a">
+            <div>
+                <input type="text"  id="dis">
+            </div>
+            <br>
+            <div class="left">
+                <input type="button" class="num"  value="AC" onclick="a.dis.value='AC'">  &nbsp;  &nbsp;  
+                <input type="button" class="num"  value="C" onclick="backspace()"> &nbsp; &nbsp;
+                <input type="button" class="num"  value="%" onclick="a.dis.value+='%'">   &nbsp; &nbsp;
+                <input type="button" class="num" id="col" value="/" onclick="a.dis.value+='/'">   &nbsp;  &nbsp;
+            </div>
+            <br>
+            <div class="left">
+                <input type="button" class="num" value="7"onclick="a.dis.value+='7'">  &nbsp;  &nbsp;
+                <input type="button" class="num" value="8"onclick="a.dis.value+='8'">  &nbsp;  &nbsp;
+                <input type="button" class="num" value="9"onclick="a.dis.value+='9'">  &nbsp;  &nbsp;
+                <input type="button" class="num" id="col" value="*"onclick="a.dis.value+='*'"> &nbsp;  &nbsp;
+            </div>
+            <br>
+            <div class="left">
+                <input type="button" class="num" value="4"onclick="a.dis.value+='4'">  &nbsp;  &nbsp;
+                <input type="button" class="num" value="5" onclick="a.dis.value+='5'">  &nbsp;  &nbsp;
+                <input type="button" class="num" value="6" onclick="a.dis.value+='6'">  &nbsp;  &nbsp;
+                <input type="button" class="num" id="col" value="-" onclick="a.dis.value+='-'">  &nbsp;  &nbsp;
+            </div>
+            <br>
+            <div class="left">
+                <input type="button" class="num" value="1" onclick="a.dis.value+='1'">  &nbsp;  &nbsp;
+                <input type="button" class="num" value="2" onclick="a.dis.value+='2'">  &nbsp;  &nbsp;
+                <input type="button" class="num" value="3" onclick="a.dis.value+='3'">  &nbsp;  &nbsp;
+                <input type="button" class="num" id="col" value="+" onclick="a.dis.value+='+'">  &nbsp;  &nbsp;
+            </div>
+            <br>
+            <div class="left">
+                <input type="button" class="Num" value="0" onclick="a.dis.value+='0'">  &nbsp;  &nbsp;
+                <input type="button" class="num" value="." onclick="a.dis.value+='.'">  &nbsp;  &nbsp;
+                <input type="button" class="num" id="col" value="="  onclick="a.dis.value=eval(a.dis.value)">  &nbsp;  &nbsp;
+            </div>
+        </form>
+      </div>
+  </div>
+
+    <script src="./cal.js"></script>
+</body>
+</html>
